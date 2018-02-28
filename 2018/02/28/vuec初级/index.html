@@ -68,7 +68,7 @@
 
 
 
-  <meta name="keywords" content="Hexo, NexT" />
+  <meta name="keywords" content="vue初级命令," />
 
 
 
@@ -81,16 +81,18 @@
 
 
 
-<meta name="description" content="主要用于个人学习笔记">
-<meta property="og:type" content="website">
-<meta property="og:title" content="高许诺个人博客">
-<meta property="og:url" content="http://yoursite.com/index.html">
+<meta name="description" content="第十四课实例化多个vue对象声明多个vue  可以从另一个实例化对象里面改变另一个实例化对象的值 第十五课实 组件component是组件  字定义名字greetingdome使用方法 以标签的形式使用 第十六课实 cli脚手架搭建node开发环境node -v在6.9以上 npm-v在3.0以上 全局安装 vue-cli$ npm install –global vue-cli如果装过了可以 v">
+<meta name="keywords" content="vue初级命令">
+<meta property="og:type" content="article">
+<meta property="og:title" content="vuec初级">
+<meta property="og:url" content="http://yoursite.com/2018/02/28/vuec初级/index.html">
 <meta property="og:site_name" content="高许诺个人博客">
-<meta property="og:description" content="主要用于个人学习笔记">
+<meta property="og:description" content="第十四课实例化多个vue对象声明多个vue  可以从另一个实例化对象里面改变另一个实例化对象的值 第十五课实 组件component是组件  字定义名字greetingdome使用方法 以标签的形式使用 第十六课实 cli脚手架搭建node开发环境node -v在6.9以上 npm-v在3.0以上 全局安装 vue-cli$ npm install –global vue-cli如果装过了可以 v">
 <meta property="og:locale" content="zh-Hans">
+<meta property="og:updated_time" content="2018-02-28T03:51:06.412Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="高许诺个人博客">
-<meta name="twitter:description" content="主要用于个人学习笔记">
+<meta name="twitter:title" content="vuec初级">
+<meta name="twitter:description" content="第十四课实例化多个vue对象声明多个vue  可以从另一个实例化对象里面改变另一个实例化对象的值 第十五课实 组件component是组件  字定义名字greetingdome使用方法 以标签的形式使用 第十六课实 cli脚手架搭建node开发环境node -v在6.9以上 npm-v在3.0以上 全局安装 vue-cli$ npm install –global vue-cli如果装过了可以 v">
 
 
 
@@ -120,13 +122,13 @@
 
 
 
-  <link rel="canonical" href="http://yoursite.com/"/>
+  <link rel="canonical" href="http://yoursite.com/2018/02/28/vuec初级/"/>
 
 
 
 
 
-  <title>高许诺个人博客</title>
+  <title>vuec初级 | 高许诺个人博客</title>
   
 
 
@@ -145,8 +147,7 @@
     
   
 
-  <div class="container sidebar-position-left 
-  page-home">
+  <div class="container sidebar-position-left page-post-detail">
     <div class="headband"></div>
 
     <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
@@ -229,9 +230,9 @@
         <div class="content-wrap">
           <div id="content" class="content">
             
-  <section id="posts" class="posts-expand">
+
+  <div id="posts" class="posts-expand">
     
-      
 
   
 
@@ -261,9 +262,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2018/02/28/vuec初级/" itemprop="url">vuec初级</a></h1>
+          <h1 class="post-title" itemprop="name headline">vuec初级</h1>
         
 
         <div class="post-meta">
@@ -313,9 +312,7 @@
       
 
       
-        
-          
-            <p>第十四课实例化多个vue对象<br>声明多个vue  可以从另一个实例化对象里面改变另一个实例化对象的值</p>
+        <p>第十四课实例化多个vue对象<br>声明多个vue  可以从另一个实例化对象里面改变另一个实例化对象的值</p>
 <p>第十五课实 组件<br>component是组件  字定义名字greeting<br>dome使用方法 以标签的形式使用</p>
 <p>第十六课实 cli脚手架搭建<br>node开发环境node -v在6.9以上 npm-v在3.0以上</p>
 <h1 id="全局安装-vue-cli"><a href="#全局安装-vue-cli" class="headerlink" title="全局安装 vue-cli"></a>全局安装 vue-cli</h1><p>$ npm install –global vue-cli<br>如果装过了可以 vue–version检查版本<br>安装好之后 切换到自己想安装的盘里  执行<br>vue init webpack 名字</p>
@@ -381,8 +378,6 @@
 <p>方法中声明事件  接收参数改变数值</p>
 <p>第二十四课实  生命周期<br>组件在执行的过程中发生一个声明周期的阶段<br>钩子函数和methods都是方法  所以写在下面<br>beforeCreate:function(){<br>      alert(‘组件实例化之前执行的方法’)<br>  },<br>  created:function(){<br>      alert(‘组件实例化之前，但页面还没显示’)<br>  },<br>  beforeMount:function(){<br>      alert(‘组件挂载前，页面认为显示，但虚拟Dome已经配置’)<br>  },<br>  mounted:function(){<br>      alert(“此方法执行后，页面显示”)<br>  },<br>  beforeUpdate:function(){<br>      alert(“组件更新前，页面仍未更新，但虚拟Dom已经配置”)<br>  },<br>  Update:function(){<br>      alert(“组件更新前后，此方法执行后页面显示”)<br>  },<br>  beforeDestory:function(){<br>      alert(“组件销毁前”)<br>  }<br>  ,<br> Destory:function(){<br>      alert(“组件销毁”)<br>  }</p>
 
-          
-        
       
     </div>
     
@@ -397,269 +392,36 @@
 
     <footer class="post-footer">
       
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
-      
-
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/02/28/vue路由/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="prom-s">
-      <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/avatar.jpg">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="高许诺个人博客">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2018/02/28/vue路由/" itemprop="url">vue路由</a></h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">发表于</span>
-              
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-02-28T11:32:46+08:00">
-                2018-02-28
-              </time>
-            
-
-            
-
-            
-          </span>
-
+        <div class="post-tags">
           
-
+            <a href="/tags/vue初级命令/" rel="tag"># vue初级命令</a>
           
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
-
         </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-            <p>#第二十五课实  路由  http</p>
-<p>路由命令行安装在本项目里执行命令行 npm install vue-router –save-dev<br>在main.js中 引入router<br>import VueRouter from ‘vue-router’<br>使用方法 Vue.use（VueRouter）<br>//配置路由<br>routes不要写错<br>下面的路径在上面要先导入  否则找不到报错<br>const router = new VueRouter({<br>    routes:[<br>     {path:”/“,component:Home},<br>     {path:”/helloworld”,component:HelloWorld},<br>    ],<br>    mode:’history’<br>})<br>mode：“hostory”为了不让上面的导航栏出现井号跳转</p>
-<p>路由配置完成之后全局组件要导入使用<br>new Vue({<br>    router,<br>  el: ‘#app’,<br>  components: { App },<br>  template: ‘<app>‘<br>})<br>完成之后在根目录app.VUE中引用router-view</app></p>
-<p><div id="app"><br>      <ul><br>          <li><br>              <!--<a href="/">home</a>--><br>              <router-link to="/">home</router-link><br>          </li><br>          <li><br>              <!--<a href="/helloworld">hello</a>--><br>              <router-link to="/helloworld">hello</router-link><br>          </li><br>      </ul><br>      <router-view></router-view></div></p>
-<p>  <br>vue中不能用a标签跳转 a标签会出现刷新 有专门的跳转方法   router-view  特殊属性to<br>http请求  安装 vue-resouce    命令行在本项目中安装  npm install vue -resource –save -dev<br>安装成功之后  在main.js中导入模块import VueResource from ‘vue-resource’<br>Vue.use(VueResource)使用<br>可以直接请求别的接口了  这个网站全是接口<a href="http://jsonplaceholder.typicode.com/" target="_blank" rel="noopener">http://jsonplaceholder.typicode.com/</a><br>接口传参的方式 <a href="http://blog.csdn.net/pqj222/article/details/78499469" target="_blank" rel="noopener">http://blog.csdn.net/pqj222/article/details/78499469</a><br>请求网络数据</p>
-<p><a href="http://blog.csdn.net/u013778905/article/details/54235906" target="_blank" rel="noopener">http://blog.csdn.net/u013778905/article/details/54235906</a><br>打包webpack<br>先修改index.js里面的配置</p>
-<p>修改完成之后  命令行运行 npm run build  打包</p>
-<p>在dist里面  以后要通过服务器打开index.html就可以<br><a href="http://blog.csdn.net/crazywoniu/article/details/74065721" target="_blank" rel="noopener">http://blog.csdn.net/crazywoniu/article/details/74065721</a> 打包博客</p>
-
-          
-        
-      
-    </div>
-    
-    
-    
-
-    
-
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
       
 
       
       
-        <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
       
 
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/02/27/hello-world/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="prom-s">
-      <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/avatar.jpg">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="高许诺个人博客">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2018/02/27/hello-world/" itemprop="url">Hello World</a></h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
             
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">发表于</span>
-              
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-02-27T14:38:12+08:00">
-                2018-02-27
-              </time>
+              <a href="/2018/02/28/vue路由/" rel="next" title="vue路由">
+                <i class="fa fa-chevron-left"></i> vue路由
+              </a>
             
+          </div>
 
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
             
-
-            
-          </span>
-
-          
-
-          
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
-
+          </div>
         </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
       
 
       
-        
-          
-            <p>Welcome to <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="noopener">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="noopener">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="noopener">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New Post"</span></span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="noopener">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="noopener">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="noopener">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/deployment.html" target="_blank" rel="noopener">Deployment</a></p>
-
-          
-        
-      
-    </div>
-    
-    
-    
-
-    
-
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
       
     </footer>
   </div>
@@ -669,10 +431,11 @@
   </article>
 
 
-    
-  </section>
 
-  
+    <div class="post-spread">
+      
+    </div>
+  </div>
 
 
           </div>
@@ -680,6 +443,10 @@
 
 
           
+
+  
+
+
 
         </div>
         
@@ -700,8 +467,17 @@
       
 
       
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            站点概览
+          </li>
+        </ul>
+      
 
-      <section class="site-overview-wrap sidebar-panel sidebar-panel-active">
+      <section class="site-overview-wrap sidebar-panel">
         <div class="site-overview">
           <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
             
@@ -763,6 +539,22 @@
         </div>
       </section>
 
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#全局安装-vue-cli"><span class="nav-number">1.</span> <span class="nav-text">全局安装 vue-cli</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#全局安装-vue-cli-1"><span class="nav-number">2.</span> <span class="nav-text">全局安装 vue-cli</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#全局安装-vue-cli-2"><span class="nav-number">3.</span> <span class="nav-text">全局安装 vue-cli</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#全局安装-vue-cli-3"><span class="nav-number">4.</span> <span class="nav-text">全局安装 vue-cli</span></a></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
       
 
       
@@ -903,6 +695,10 @@
 
 
   
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.4"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.1.4"></script>
+
+
 
   
 
