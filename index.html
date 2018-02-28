@@ -244,6 +244,133 @@
   
   
   <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/02/28/vue路由/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="prom-s">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.jpg">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="高许诺个人博客">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2018/02/28/vue路由/" itemprop="url">vue路由</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-02-28T11:32:46+08:00">
+                2018-02-28
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <p>#第二十五课实  路由  http</p>
+<p>路由命令行安装在本项目里执行命令行 npm install vue-router –save-dev<br>在main.js中 引入router<br>import VueRouter from ‘vue-router’<br>使用方法 Vue.use（VueRouter）<br>//配置路由<br>routes不要写错<br>下面的路径在上面要先导入  否则找不到报错<br>const router = new VueRouter({<br>    routes:[<br>     {path:”/“,component:Home},<br>     {path:”/helloworld”,component:HelloWorld},<br>    ],<br>    mode:’history’<br>})<br>mode：“hostory”为了不让上面的导航栏出现井号跳转</p>
+<p>路由配置完成之后全局组件要导入使用<br>new Vue({<br>    router,<br>  el: ‘#app’,<br>  components: { App },<br>  template: ‘<app>‘<br>})<br>完成之后在根目录app.VUE中引用router-view</app></p>
+<p><div id="app"><br>      <ul><br>          <li><br>              <!--<a href="/">home</a>--><br>              <router-link to="/">home</router-link><br>          </li><br>          <li><br>              <!--<a href="/helloworld">hello</a>--><br>              <router-link to="/helloworld">hello</router-link><br>          </li><br>      </ul><br>      <router-view></router-view></div></p>
+<p>  <br>vue中不能用a标签跳转 a标签会出现刷新 有专门的跳转方法   router-view  特殊属性to<br>http请求  安装 vue-resouce    命令行在本项目中安装  npm install vue -resource –save -dev<br>安装成功之后  在main.js中导入模块import VueResource from ‘vue-resource’<br>Vue.use(VueResource)使用<br>可以直接请求别的接口了  这个网站全是接口<a href="http://jsonplaceholder.typicode.com/" target="_blank" rel="noopener">http://jsonplaceholder.typicode.com/</a><br>接口传参的方式 <a href="http://blog.csdn.net/pqj222/article/details/78499469" target="_blank" rel="noopener">http://blog.csdn.net/pqj222/article/details/78499469</a><br>请求网络数据</p>
+<p><a href="http://blog.csdn.net/u013778905/article/details/54235906" target="_blank" rel="noopener">http://blog.csdn.net/u013778905/article/details/54235906</a><br>打包webpack<br>先修改index.js里面的配置</p>
+<p>修改完成之后  命令行运行 npm run build  打包</p>
+<p>在dist里面  以后要通过服务器打开index.html就可以<br><a href="http://blog.csdn.net/crazywoniu/article/details/74065721" target="_blank" rel="noopener">http://blog.csdn.net/crazywoniu/article/details/74065721</a> 打包博客</p>
+
+          
+        
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
     <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/02/27/vue初级命令/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -544,7 +671,7 @@
               
                 <a href="/archives/">
               
-                  <span class="site-state-item-count">2</span>
+                  <span class="site-state-item-count">3</span>
                   <span class="site-state-item-name">日志</span>
                 </a>
               </div>
@@ -552,6 +679,15 @@
 
             
 
+            
+              
+              
+              <div class="site-state-item site-state-tags">
+                
+                  <span class="site-state-item-count">1</span>
+                  <span class="site-state-item-name">标签</span>
+                
+              </div>
             
 
           </nav>
