@@ -68,7 +68,7 @@
 
 
 
-  <meta name="keywords" content="vue路由机制," />
+  <meta name="keywords" content="Hexo, NexT" />
 
 
 
@@ -79,18 +79,17 @@
 
 
 
-<meta name="description" content="#第二十五课实  路由  http 路由命令行安装在本项目里执行命令行 npm install vue-router –save-dev在main.js中 引入routerimport VueRouter from ‘vue-router’使用方法 Vue.use（VueRouter）//配置路由routes不要写错下面的路径在上面要先导入  否则找不到报错const router = new V">
-<meta name="keywords" content="vue路由机制">
-<meta property="og:type" content="article">
-<meta property="og:title" content="vue路由">
-<meta property="og:url" content="http://yoursite.com/2018/02/28/vue路由/index.html">
+<meta name="description" content="主要用于个人学习笔记">
+<meta property="og:type" content="website">
+<meta property="og:title" content="vue">
+<meta property="og:url" content="http://yoursite.com/tags/index.html">
 <meta property="og:site_name" content="高许诺个人博客">
-<meta property="og:description" content="#第二十五课实  路由  http 路由命令行安装在本项目里执行命令行 npm install vue-router –save-dev在main.js中 引入routerimport VueRouter from ‘vue-router’使用方法 Vue.use（VueRouter）//配置路由routes不要写错下面的路径在上面要先导入  否则找不到报错const router = new V">
+<meta property="og:description" content="主要用于个人学习笔记">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2018-02-28T03:45:39.197Z">
+<meta property="og:updated_time" content="2018-02-28T05:49:31.085Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="vue路由">
-<meta name="twitter:description" content="#第二十五课实  路由  http 路由命令行安装在本项目里执行命令行 npm install vue-router –save-dev在main.js中 引入routerimport VueRouter from ‘vue-router’使用方法 Vue.use（VueRouter）//配置路由routes不要写错下面的路径在上面要先导入  否则找不到报错const router = new V">
+<meta name="twitter:title" content="vue">
+<meta name="twitter:description" content="主要用于个人学习笔记">
 
 
 
@@ -120,13 +119,13 @@
 
 
 
-  <link rel="canonical" href="http://yoursite.com/2018/02/28/vue路由/"/>
+  <link rel="canonical" href="http://yoursite.com/tags/"/>
 
 
 
 
 
-  <title>vue路由 | 高许诺个人博客</title>
+  <title>vue | 高许诺个人博客</title>
   
 
 
@@ -231,155 +230,40 @@
 
   <div id="posts" class="posts-expand">
     
-
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/02/28/vue路由/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="prom-s">
-      <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/avatar.jpg">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="高许诺个人博客">
-    </span>
-
     
+    
+    <div class="post-block page">
       <header class="post-header">
 
-        
-        
-          <h1 class="post-title" itemprop="name headline">vue路由</h1>
-        
+	<h1 class="post-title" itemprop="name headline">vue</h1>
 
-        <div class="post-meta">
-          <span class="post-time">
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">发表于</span>
-              
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-02-28T11:32:46+08:00">
-                2018-02-28
-              </time>
-            
 
-            
 
-            
-          </span>
-
-          
-
-          
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
+</header>
 
       
       
-
       
-        <p>#第二十五课实  路由  http</p>
-<p>路由命令行安装在本项目里执行命令行 npm install vue-router –save-dev<br>在main.js中 引入router<br>import VueRouter from ‘vue-router’<br>使用方法 Vue.use（VueRouter）<br>//配置路由<br>routes不要写错<br>下面的路径在上面要先导入  否则找不到报错<br>const router = new VueRouter({<br>    routes:[<br>     {path:”/“,component:Home},<br>     {path:”/helloworld”,component:HelloWorld},<br>    ],<br>    mode:’history’<br>})<br>mode：“hostory”为了不让上面的导航栏出现井号跳转</p>
-<p>路由配置完成之后全局组件要导入使用<br>new Vue({<br>    router,<br>  el: ‘#app’,<br>  components: { App },<br>  template: ‘<app>‘<br>})<br>完成之后在根目录app.VUE中引用router-view</app></p>
-<p><div id="app"><br>      <ul><br>          <li><br>              <!--<a href="/">home</a>--><br>              <router-link to="/">home</router-link><br>          </li><br>          <li><br>              <!--<a href="/helloworld">hello</a>--><br>              <router-link to="/helloworld">hello</router-link><br>          </li><br>      </ul><br>      <router-view></router-view></div></p>
-<p>  <br>vue中不能用a标签跳转 a标签会出现刷新 有专门的跳转方法   router-view  特殊属性to<br>http请求  安装 vue-resouce    命令行在本项目中安装  npm install vue -resource –save -dev<br>安装成功之后  在main.js中导入模块import VueResource from ‘vue-resource’<br>Vue.use(VueResource)使用<br>可以直接请求别的接口了  这个网站全是接口<a href="http://jsonplaceholder.typicode.com/" target="_blank" rel="noopener">http://jsonplaceholder.typicode.com/</a><br>接口传参的方式 <a href="http://blog.csdn.net/pqj222/article/details/78499469" target="_blank" rel="noopener">http://blog.csdn.net/pqj222/article/details/78499469</a><br>请求网络数据</p>
-<p><a href="http://blog.csdn.net/u013778905/article/details/54235906" target="_blank" rel="noopener">http://blog.csdn.net/u013778905/article/details/54235906</a><br>打包webpack<br>先修改index.js里面的配置</p>
-<p>修改完成之后  命令行运行 npm run build  打包</p>
-<p>在dist里面  以后要通过服务器打开index.html就可以<br><a href="http://blog.csdn.net/crazywoniu/article/details/74065721" target="_blank" rel="noopener">http://blog.csdn.net/crazywoniu/article/details/74065721</a> 打包博客</p>
-
+      <div class="post-body">
+        
+        
+          <div class="tag-cloud">
+            <div class="tag-cloud-title">
+                目前共计 4 个标签
+            </div>
+            <div class="tag-cloud-tags">
+              <a href="/tags/html/" style="font-size: 12px; color: #ccc">html</a> <a href="/tags/vue/" style="font-size: 12px; color: #ccc">vue</a> <a href="/tags/vue初级命令/" style="font-size: 12px; color: #ccc">vue初级命令</a> <a href="/tags/vue路由机制/" style="font-size: 12px; color: #ccc">vue路由机制</a>
+            </div>
+          </div>
+        
+      </div>
+      
+      
       
     </div>
     
     
     
-
-    
-
-    
-
-    
-
-    <footer class="post-footer">
-      
-        <div class="post-tags">
-          
-            <a href="/tags/vue路由机制/" rel="tag"># vue路由机制</a>
-          
-        </div>
-      
-
-      
-      
-      
-
-      
-        <div class="post-nav">
-          <div class="post-nav-next post-nav-item">
-            
-              <a href="/2018/02/27/hello-world/" rel="next" title="Hello World">
-                <i class="fa fa-chevron-left"></i> Hello World
-              </a>
-            
-          </div>
-
-          <span class="post-nav-divider"></span>
-
-          <div class="post-nav-prev post-nav-item">
-            
-              <a href="/2018/02/28/vuec初级/" rel="prev" title="vue初级">
-                vue初级 <i class="fa fa-chevron-right"></i>
-              </a>
-            
-          </div>
-        </div>
-      
-
-      
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-
-    <div class="post-spread">
-      
-    </div>
   </div>
 
 
@@ -388,10 +272,6 @@
 
 
           
-
-  
-
-
 
         </div>
         
