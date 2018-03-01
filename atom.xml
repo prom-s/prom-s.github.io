@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2018-03-01T02:39:37.048Z</updated>
+  <updated>2018-03-01T02:53:00.416Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -15,6 +15,29 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>属性绑定</title>
+    <link href="http://yoursite.com/2018/03/01/%E5%B1%9E%E6%80%A7%E7%BB%91%E5%AE%9A/"/>
+    <id>http://yoursite.com/2018/03/01/属性绑定/</id>
+    <published>2018-03-01T02:48:50.000Z</published>
+    <updated>2018-03-01T02:53:00.416Z</updated>
+    
+    <content type="html"><![CDATA[<p><a href="https://ke.qq.com/webcourse/index.html#course_id=256052&amp;term_id=100301895&amp;taid=1650577406945332&amp;vid=g1422f85l6t" target="_blank" rel="noopener">https://ke.qq.com/webcourse/index.html#course_id=256052&amp;term_id=100301895&amp;taid=1650577406945332&amp;vid=g1422f85l6t</a><br>属性绑定不能直接两个大括号写  dom解析不了  需要用v-bind：进行绑定</p><p>如果想直接输出一个标签  需要在给个父元素 用v-html进行绑定</p><p>vue使用事件：<br>v-on：click点击事件 一般在js里面写方法  dom调用  v-on：click调用方法的时候可以写括号  也可以省略  因为事件自己会判断  如果是传参的时候 则必须要带括号；</p><p>clientX代表是整个视图<br>offsetX表示在自己的容器内<br>点击事件的另一种写法</p><p>事件修饰符：</p><p>stop阻止事件  once点击事件执行一次</p><p>.prevent阻止默认事件</p><p>第七课 键盘事件<br>点击键盘事件  keyup</p><p>如果只能回车的时候才能触发事件，也可以和其他的事件一起触发</p><p>第八课 双向数据绑定<br>双向数据绑定一定会有input  输入的标签 要拿大input标签里面的值  有个专门的属性  ref当ref赋值是什么的时候  就可以在方法里面那数据  v-model也是可以实现双向数据绑定 v-model的机制是  当绑定的v-model=“name”  name有值的时候  会赋值给input   当input值发生改变的时候  model绑定的属性值也发生改变</p><p>第九课 计算属性<br>只有耗时有大量数据的时候才会使用计算属性  使用计算属性的时候不加括号 ，方法的时候必须加括号，计算属性是为了优化 他只会执行和虚拟dom不同的部分</p><p>第十课 动态绑定css样式<br>    vue可以直接绑定样式 但是绑定之后是一个对象里面的值 只能为true和false<br>所以js中定义两个变量 绑定点击事件进行改变样式</p><p>以计算属性的方式去动态改变样式 计算属性返回来的是个对象  点击事件的改变  对象也在改变</p><p>第十一课 条件语句<br>条件语句  如果两者出来其一  要加else<br>if为false时  是一个不存在的dome<br>show为false的时候  只是隐藏了</p><p>第十二课 for循环<br>循环拿取数值<br>直接下标拿取<br><br>循环数组拿取数值</p><p>如果是对象的形式  只能分开拿值</p><p>加上下标</p><p>template防止多次渲染</p><p>两次for循环  再次遍历</p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;&lt;a href=&quot;https://ke.qq.com/webcourse/index.html#course_id=256052&amp;amp;term_id=100301895&amp;amp;taid=1650577406945332&amp;amp;vid=g1422f85l6t&quot; tar
+      
+    
+    </summary>
+    
+    
+      <category term="属性绑定介绍" scheme="http://yoursite.com/tags/%E5%B1%9E%E6%80%A7%E7%BB%91%E5%AE%9A%E4%BB%8B%E7%BB%8D/"/>
+    
+  </entry>
   
   <entry>
     <title>vue初级</title>
